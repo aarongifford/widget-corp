@@ -1,0 +1,52 @@
+/* src/components/WidgetDetail.css */
+.widget-detail-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #fff;
+}
+
+.widget-detail-container h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 120px auto; /* Label column width and Value column */
+  gap: 10px 15px; /* Row gap and Column gap */
+  margin-bottom: 20px;
+}
+
+.detail-label {
+  font-weight: bold;
+  text-align: right;
+  color: #555;
+}
+
+.detail-value {
+  text-align: left;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the 'not found' case */
+.widget-detail-container h2 + .back-button {
+    margin-top: 10px; /* Adjust spacing if it's just the title and back button */
+}
