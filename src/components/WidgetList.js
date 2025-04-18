@@ -10,7 +10,7 @@ function WidgetList({ widgets }) {
 
   return (
     <div className="widget-list-container">
-      <h2>Our Widgets</h2>
+      <h2>Company Widgets</h2>
       <ul className="widget-list">
         {widgets.map((widget) => (
           <li key={widget.id} className="widget-list-item">
